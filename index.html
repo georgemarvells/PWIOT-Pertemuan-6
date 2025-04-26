@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Monitoring Sistem Sensor Suhu dan LED</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Monitoring Suhu dan LED</h2>
+        <a href="http://localhost/PWIOT-Pertemuan-6//history.php" class="btn btn-primary">
+          <i class="fas fa-history"></i> Lihat Riwayat
+        </a>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="card text-center">
+            <div class="card-header bg-info text-white">Suhu</div>
+            <div class="card-body">
+              <h3 id="temperatureValue">Loading...</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card text-center">
+            <div class="card-header bg-info text-white">Status LED</div>
+            <div class="card-body">
+              <h3 id="ledValue">Loading...</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-database.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

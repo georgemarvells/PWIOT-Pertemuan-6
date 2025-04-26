@@ -1,0 +1,16 @@
+.status-badge {
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  .status-on {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .status-off {
+    background-color: #dc3545;
+    color: white;
+  }
+  
